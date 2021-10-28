@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialised;
+}
+
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.top {
+  display: none;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.effect {
+	animation: loading 20s linear infinite;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); 
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 1rem;
+
+  justify-content: center;
+}
+
+.doWhile {
+  display: none;
+}
+
+/* Estilo para tablet*/
+@media (min-width: 720px) {
+  main {
+    background: none;
+    margin-top: 0;
+    background-color: rgba(10, 9, 9, 0.904);
+  }
+
+  .container {
+    border-radius: 12px;
+    border: rgb(202, 191, 191) solid 1px;
+    max-width: 350px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-right: auto;
+    text-align: center;
+    background: url(images/mask.svg) no-repeat center/cover;
+    background-color: rgba(90, 87, 87, 0.37);
+    box-shadow: 15px 15px 10px 5px rgba(22, 21, 21, 0.87);
+  }
+
+  .container:hover {
+    animation: bounce 5s linear infinite;
+  }
+
+  .top {
+    position: relative;
+    top: -2rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .top span {
+    margin-top: -5rem;
+    z-index: 100;
+  }
+  
+  .top span:nth-child(2) {
+    margin-top: -12px;
+    z-index: 100;
+  }
+
+  .effect > img {
+    width: 4rem;  	
+  }
+
+  .effect img{
+    filter: contrast(0.5) brightness(.1);
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 0 auto 0;
+    position: relative;
+  }
+  
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+
+  .avatar > img {
+    width: 8.5rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  #userBio {
+    max-width: 290px;
+    margin: 2rem auto 0;
+  }
+
+  ul {
+    margin: 2rem auto 2rem;
+  }
+}
+
+/* Estilo para desktop*/
+@media (min-width: 960px) {
+  main {
+    background: url(images/bg-desktop.png) no-repeat;
+    background-attachment: scroll;
+    background-position: 90% 40%;
+    margin-top: 0;
+    background-color: rgba(10, 9, 9, 0.904);
+  }
+
+  .container {
+    border-radius: 12px;
+    border: rgb(202, 191, 191) solid 1px;
+    max-width: 350px;
+    max-height: 600px;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-right: auto;
+    text-align: center;
+    background: url(images/mask.svg) no-repeat center/cover;
+    background-color: rgba(90, 87, 87, 0.37);
+    box-shadow: 15px 15px 10px 5px rgba(22, 21, 21, 0.87);
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      transform: skewY(0deg)
+    }
+    25% {
+      transform: skewY(3deg)
+    }
+    50% {
+      transform: skewY(0deg)
+    }
+    75% {
+      transform: skewY(-3deg)
+    }
+    100%{
+      transform: skewY(0deg)
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: skewY(0deg)
+    }
+    25% {
+      transform: skewY(3deg)
+    }
+    50% {
+      transform: skewY(0deg)
+    }
+    75% {
+      transform: skewY(-3deg)
+    }
+    100%{
+      transform: skewY(0deg)
+    }
+  }
+
+  .container:hover {
+    animation: bounce 5s linear infinite;
+  }
+
+  .top {
+    position: relative;
+    top: -2rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .top span {
+    margin-top: -5rem;
+    z-index: 100;
+  }
+  
+  .top span:nth-child(2) {
+    margin-top: -12px;
+    z-index: 100;
+  }
+
+  .effect > img {
+    width: 4rem;  	
+  }
+
+  .effect img{
+    filter: contrast(0.5) brightness(.1);
+  }
+
+  .avatar {
+    width: 10rem;
+    margin: 0 auto 0;
+    position: relative;
+  }
+  
+  .avatar span {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+  }
+
+  .avatar > img {
+    width: 8.5rem;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  #userBio {
+    max-width: 290px;
+    margin: 2rem auto 0;
+  }
+
+  ul {
+    margin: 2rem auto 2rem;
+  }
+
+  a:hover {
+    transition: all .5s ease;
+    transform: scale(1.1);
+  }
+
+  a span:hover {
+    color: rgb(185, 127, 199);
+  }
+}
