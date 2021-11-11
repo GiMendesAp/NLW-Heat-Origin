@@ -4,6 +4,12 @@
 Crachá Virtual NLW-Origin
 </h1>
 
+![desktop](https://user-images.githubusercontent.com/36974949/141222946-2679caf0-f800-43d4-bbdb-952a798c75e3.png)
+
+![tablet](https://user-images.githubusercontent.com/36974949/141223006-648dc4e7-b5a2-4b9f-b303-e0a39a87458c.png)
+
+![mobile](https://user-images.githubusercontent.com/36974949/141223026-3c6eb3ef-0316-446a-ac11-115fb82510a1.jpeg)
+
 ## 🚀 Tecnologias Utilizadas
 
 - HTML
