@@ -8,7 +8,7 @@ Crachá Virtual NLW-Origin
 
 ![tablet](https://user-images.githubusercontent.com/36974949/141223006-648dc4e7-b5a2-4b9f-b303-e0a39a87458c.png)
 
-![mobile](https://user-images.githubusercontent.com/36974949/141223026-3c6eb3ef-0316-446a-ac11-115fb82510a1.jpeg)
+![mobile](https://user-images.githubusercontent.com/36974949/142087062-555941a7-5bb7-4596-a2ae-5fd546a4d30f.jpeg)
 
 ## 🚀 Tecnologias Utilizadas
 
